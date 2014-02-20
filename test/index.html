@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Delegated Dropdown</title>
+    <link rel="stylesheet" href="../build/build.css">
+    <script src="../build/build.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+      }
+
+      .Dropdown,
+      .Dropdown-toggle {
+        display: inline-block;
+        padding: 5px 3px;
+      }
+
+      .Dropdown-menu {
+        z-index: 1000;
+        min-width: 100%;
+        background-color: white;
+        box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.3);
+        transition: opacity .3s linear;
+      }
+
+      .Dropdown-item {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        white-space: nowrap;
+      }
+
+      #top-left,
+      #top-right,
+      #bottom-right,
+      #bottom-left {
+        position: absolute;
+        display: inline-block;
+      }
+
+      #top-left,
+      #top-right {
+        top: 0;
+      }
+
+      #bottom-left,
+      #bottom-right {
+        bottom: 0;
+      }
+
+      #top-left,
+      #bottom-left {
+        left: 0;
+      }
+
+      #top-right,
+      #bottom-right {
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="top-left">
+      <div class="Dropdown">
+        <div class="Dropdown-toggle">Toggle</div>
+        <div class="Dropdown-menu">
+          <div class="Dropdown-item">
+            first asdf
+          </div>
+          <div class="Dropdown-item">
+            second asdf
+          </div>
+          <div class="Dropdown-item">
+            third asdf
+          </div>
+          <div class="Dropdown-item">
+            fourth asdf
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="top-right">
+      <div class="Dropdown">
+        <div class="Dropdown-toggle">Toggle</div>
+        <div class="Dropdown-menu">
+          <div class="Dropdown-item">
+            first asdf
+          </div>
+          <div class="Dropdown-item">
+            second asdf
+          </div>
+          <div class="Dropdown-item">
+            third asdf
+          </div>
+          <div class="Dropdown-item">
+            fourth asdf
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="bottom-right">
+      <div class="Dropdown">
+        <div class="Dropdown-toggle">Toggle</div>
+        <div class="Dropdown-menu">
+          <div class="Dropdown-item">
+            first asdf
+          </div>
+          <div class="Dropdown-item">
+            second asdf
+          </div>
+          <div class="Dropdown-item">
+            third asdf
+          </div>
+          <div class="Dropdown-item">
+            fourth asdf
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="bottom-left">
+      <div class="Dropdown">
+        <div class="Dropdown-toggle">Toggle</div>
+        <div class="Dropdown-menu">
+          <div class="Dropdown-item">
+            first asdf
+          </div>
+          <div class="Dropdown-item">
+            second asdf
+          </div>
+          <div class="Dropdown-item">
+            third asdf
+          </div>
+          <div class="Dropdown-item">
+            fourth asdf
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var dropdown = require('delegated-dropdown')
+      // position all dropdowns
+      dropdown.position(document.querySelector('#top-left .Dropdown'))
+      dropdown.position(document.querySelector('#top-right .Dropdown'))
+      dropdown.position(document.querySelector('#bottom-left .Dropdown'))
+      dropdown.position(document.querySelector('#bottom-right .Dropdown'))
+    </script>
+  </body>

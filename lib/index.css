@@ -1,0 +1,47 @@
+/**
+ * .Dropdown(.open)(.up)(.down)(.left)(.right)
+ *   .Dropdown-toggle
+ *   .Dropdown-menu
+ *     .Dropdown-item
+ */
+
+.Dropdown {
+  position: relative;
+}
+
+.Dropdown-menu {
+  position: absolute;
+  /* hidden by default */
+  opacity: 0;
+  z-index: -9999;
+}
+
+/* .no-hover .Dropdown:hover .Dropdown-menu */
+.Dropdown.open .Dropdown-menu {
+  /* no longer hidden! */
+  opacity: 1;
+  z-index: auto;
+}
+
+/*
+ * These are all pretty opinionated,
+ * but feel free to overwrite these styles.
+ */
+
+.Dropdown.up .Dropdown-menu {
+  bottom: 100%;
+}
+
+.Dropdown.down .Dropdown-menu {
+  top: 100%;
+}
+
+/* left-justified */
+.Dropdown.left .Dropdown-menu {
+  left: 0;
+}
+
+/* right-justified */
+.Dropdown.right .Dropdown-menu {
+  right: 0;
+}

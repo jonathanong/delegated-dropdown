@@ -1,0 +1,26 @@
+{
+  "name": "delegated-dropdown",
+  "version": "0.0.1",
+  "description": "mobile-first delegated dropdown menus with smart positioning",
+  "dependencies": {
+    "component/query": "*",
+    "component/tap-event": "*",
+    "component/classes": "*",
+    "component/clickable": "*",
+    "component/matches-selector": "*",
+    "component/keyname": "*",
+    "discore/closest": "*",
+    "jonathanong/eevee": "*"
+  },
+  "development": {
+    "component/assert": "*"
+  },
+  "main": "lib/index.js",
+  "scripts": [
+    "lib/index.js"
+  ],
+  "styles": [
+    "lib/index.css"
+  ],
+  "license": "MIT"
+}
