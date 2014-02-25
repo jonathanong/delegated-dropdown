@@ -12,15 +12,13 @@
 .Dropdown-menu {
   position: absolute;
   /* hidden by default */
-  opacity: 0;
-  z-index: -9999;
+  display: none;
 }
 
 /* .no-hover .Dropdown:hover .Dropdown-menu */
 .Dropdown.open .Dropdown-menu {
   /* no longer hidden! */
-  opacity: 1;
-  z-index: auto;
+  display: block;
 }
 
 /*
