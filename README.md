@@ -15,6 +15,12 @@ Caveats:
 
 ## API
 
+```jade
+.Dropdown(.open)(.up)(.down)(.left)(.right)
+  .Dropdown-toggle
+  .Dropdown-menu
+    .Dropdown-item
+```
 View [index.css](https://github.com/jonathanong/delegated-dropdown/blob/master/lib/index.css) for the HTML structure.
 
 ```js
@@ -22,6 +28,13 @@ var dropdown = require('delegated-dropdown')
 ```
 
 Note that these methods are completely optional.
+
+### dropdown.on(event)
+
+Dropdown is an emitter. The events are:
+
+- `open <dropdown>` - when a dropdown is opened
+- `close <dropdown>` - when a dropdown is closed
 
 ### dropdown.position(el)
 

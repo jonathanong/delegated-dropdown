@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "description": "mobile-first delegated dropdown menus with smart positioning",
   "dependencies": {
+    "component/emitter": "*",
     "component/query": "*",
     "component/tap-event": "*",
     "component/classes": "*",
