@@ -1,6 +1,6 @@
 {
   "name": "delegated-dropdown",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "mobile-first delegated dropdown menus with smart positioning",
   "dependencies": {
     "component/emitter": "*",
