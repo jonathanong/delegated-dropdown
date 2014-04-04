@@ -17,6 +17,7 @@
     "component/assert": "*"
   },
   "main": "lib/index.js",
+  "repository": "jonathanong/delegated-dropdown",
   "scripts": [
     "lib/index.js"
   ],
